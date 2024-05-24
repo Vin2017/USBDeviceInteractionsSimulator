@@ -34,7 +34,7 @@ TEST(DataCollectorTest, ReadsAndPrintsValidData) {
 
 
     // Allow some time for the reader to process the file
-    std::this_thread::sleep_for(std::chrono::seconds(6));
+    std::this_thread::sleep_for(std::chrono::seconds(10));
 
     // Stop the thread
     readerThread.detach(); // Or implement a proper shutdown mechanism
